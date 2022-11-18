@@ -1,0 +1,21 @@
+﻿@model ASPCRUD.Models.AddOwnerViewModel
+@{
+}
+
+<h1>Add Owner</h1>
+<div class="container">
+    <form method="POST" action="AddOwner">
+
+        <label for="FirstName">First Name</label><br>
+        <input type="text" id="FirstName" name="FirstName" asp-for="FirstName" required><br>
+
+        <label for="LastName">Last Name</label><br>
+        <input type="text" id="LastName" name="LastName" asp-for="LastName" required><br>
+
+        <label for="DriverLicense">Driver License</label><br>
+        <input type="text" id="DriverLicense" name="DriverLicense" asp-for="DriverLicense" required><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>

@@ -1,0 +1,29 @@
+﻿@model List<ASPCRUD.Models.Domain.Owner>
+@{
+}
+
+<h1>Owners</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Owner Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Driving License</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var owner in Model)
+        {
+            <tr>
+                <td>@owner.OwnerId</td>
+                <td>@owner.FirstName</td>
+                <td>@owner.LastName</td>
+                <td>@owner.DriverLicense</td>
+                <td> <a href="Owners/View/@owner.OwnerId" >View</a> </td>
+            </tr>
+        }
+    </tbody>
+</table>

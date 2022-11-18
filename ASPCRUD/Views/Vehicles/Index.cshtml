@@ -1,0 +1,33 @@
+﻿@model List<ASPCRUD.Models.Domain.Vehicle>
+@{
+}
+
+<h1>Vehicles</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Vehicle Id</th>
+            <th>Brand</th>
+            <th>Vin</th>
+            <th>Color</th>
+            <th>Year</th>
+            <th>Owner Id</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.VehicleId</td>
+                <td>@vehicle.Brand</td>
+                <td>@vehicle.Vin</td>
+                <td>@vehicle.Color</td>
+                <td>@vehicle.Year</td>
+                <td>@vehicle.Owner_Id</td>
+                <td> <a href="Vehicles/ViewVehicle/@vehicle.VehicleId">View</a> </td>
+            </tr>
+        }
+    </tbody>
+</table>

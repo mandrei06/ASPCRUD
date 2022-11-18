@@ -1,0 +1,29 @@
+﻿@model ASPCRUD.Models.UpdateClaimViewModel
+@{
+}
+
+
+<h1>Edit Claim</h1>
+<div class="container">
+    <form method="POST" action="ViewClaim">
+
+        <label for="ClaimId">Claim Id</label><br>
+        <input type="text" id="ClaimId" name="ClaimId" asp-for="ClaimId" readonly><br>
+
+        <label for="Description">Description</label><br>
+        <input type="text" id="Description" name="Description" asp-for="Description" required><br>
+
+        <label for="Status">Status</label><br>
+        <input type="text" id="Status" name="Status" asp-for="Status" required><br>
+
+        <label for="Date">Date</label><br>
+        <input type="text" id="Date" name="Date" asp-for="Date" required><br>
+
+        <label for="Vehicle_Id">Vehicle Id</label><br>
+        <input type="text" id="Vehicle_Id" name="Vehicle_Id" asp-for="Vehicle_Id" required><br>
+
+
+        <input type="submit" class="btn btn-primary" value="Submit" asp-action="ViewClaim" asp-controller="Claims">
+        <input type="submit" class="btn btn-danger" value="Delete" asp-action="DeleteClaim" asp-controller="Claims">
+    </form>
+</div>

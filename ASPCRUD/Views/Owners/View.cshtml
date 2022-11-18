@@ -1,0 +1,26 @@
+﻿@model ASPCRUD.Models.UpdateOwnerViewModel
+@{
+}
+
+
+<h1>Edit Owner</h1>
+<div class="container">
+    <form method="POST" action="View">
+
+        <label for="OwnerId">Owner Id</label><br>
+        <input type="text" id="OwnerId" name="OwnerId" asp-for="OwnerId" readonly><br>
+
+
+        <label for="FirstName">First Name</label><br>
+        <input type="text" id="FirstName" name="FirstName" asp-for="FirstName" required><br>
+
+        <label for="LastName">Last Name</label><br>
+        <input type="text" id="LastName" name="LastName" asp-for="LastName" required><br>
+
+        <label for="DriverLicense">Driver License</label><br>
+        <input type="text" id="DriverLicense" name="DriverLicense" asp-for="DriverLicense" required><br>
+
+        <input type="submit" class="btn btn-primary" value="Submit" asp-action="View" asp-controller="Owners">
+        <input type="submit" class="btn btn-danger" value="Delete" asp-action="Delete" asp-controller="Owners">
+    </form>
+</div>

@@ -1,0 +1,32 @@
+﻿@model ASPCRUD.Models.UpdateVehicleViewModel
+@{
+}
+
+
+<h1>Edit Vehicle</h1>
+<div class="container">
+    <form method="POST" action="ViewVehicle">
+
+        <label for="VehicleId">Vehicle Id</label><br>
+        <input type="text" id="VehicleId" name="VehicleId" asp-for="VehicleId" readonly><br>
+
+        <label for="Brand">Brand</label><br>
+        <input type="text" id="Brand" name="Brand" asp-for="Brand" required><br>
+
+        <label for="Vin">Vin</label><br>
+        <input type="text" id="Vin" name="Vin" asp-for="Vin" required><br>
+
+        <label for="Color">Color</label><br>
+        <input type="text" id="Color" name="Color" asp-for="Color" required><br>
+
+        <label for="Year">Year</label><br>
+        <input type="text" id="Year" name="Year" asp-for="Year" required><br>
+
+        <label for="Owner_Id">Owner Id</label><br>
+        <input type="text" id="Owner_Id" name="Owner_Id" asp-for="Owner_Id" required><br>
+
+
+        <input type="submit" class="btn btn-primary" value="Submit" asp-action="ViewVehicle" asp-controller="Vehicles">
+        <input type="submit" class="btn btn-danger" value="Delete" asp-action="DeleteVehicle" asp-controller="Vehicles">
+    </form>
+</div>
