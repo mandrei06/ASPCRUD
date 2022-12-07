@@ -38,7 +38,7 @@ Database:  **master**
 
 User name: powerful@soleramexhpel2.database.windows.net
 
-Password: Sp1d3rm4n#
+Password: *********
 
 **DON'T drop or modify any other database/table than the ones you will create using your name**
 
